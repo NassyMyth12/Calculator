@@ -9,21 +9,8 @@ public class Сalculation {
       if(operation.equals("*"))
             return first * second;
       if(operation.equals("/"))
-      {
-          try
-          {
               return first / second;
-          }
-          catch (ArithmeticException e)
-          {
-              System.out.println("Division by zero.");
-              return -1;
-          }
-      }
-      else{
-          System.out.println("Operation not found.");
-          return -1;
-      }
-
+      else
+          throw new IllegalArgumentException("Operation not found.");
     }
 }
