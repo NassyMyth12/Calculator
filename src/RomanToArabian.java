@@ -16,7 +16,6 @@ public class RomanToArabian {
                             if (Rome[i].equals(romeNumber.substring(0, Rome[i].length())))
                             {
                                 arabNumber += Arab[i];
-                                // и удаляем из строки римскую цифру
                                 romeNumber.delete(0, Rome[i].length());
                                 if (romeNumber.length() == 0)
                                     return arabNumber;
