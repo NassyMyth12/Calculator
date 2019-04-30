@@ -14,7 +14,7 @@ public class Main {
         try {
             int first = RomanToArabian.RometoArab(symbol[0]);
             int second = RomanToArabian.RometoArab(symbol[2]);
-            System.out.println(Сalculation.Calculate(first, symbol[1], second));
+            System.out.println(ArabianToRoman.ArabtoRome(Сalculation.Calculate(first, symbol[1], second)));
         }
         catch(Exception e) {
             System.out.println(Сalculation.Calculate(parseInt(symbol[0]), symbol[1], parseInt(symbol[2])));
