@@ -8,6 +8,8 @@ public class Main {
         String a = sc.nextLine();
         String delimeter = " ";
         String[] symbol = a.split(delimeter, 3);
+        if(symbol.length != 3)
+            throw new IllegalArgumentException("Wrong input. Enter an expression with spaces!");
 
         ControlType.CheckNumbers(symbol[0], symbol[2]);
 
