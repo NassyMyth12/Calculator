@@ -1,7 +1,7 @@
 public class ArabianToRoman {
 
 
-    public static String ArabtoRome(int arab) {
+    public static String arabToRome(int arab) {
         StringBuffer romeNumber = new StringBuffer("");
 
         int m = arab / 1000;
@@ -54,12 +54,12 @@ public class ArabianToRoman {
             romeNumber.append("IX");
         if(x > 4 && x < 9)
         {
-            romeNumber.append("X");
+            romeNumber.append("V");
             for(int i = 0; i < (x-5); i++)
                 romeNumber.append("I");
         }
         if(x == 4)
-            romeNumber.append("IX");
+            romeNumber.append("IV");
         if(x > 0 && x < 4)
         {
             for(int i = 0; i < x; i++)

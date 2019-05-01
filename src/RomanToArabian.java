@@ -4,7 +4,7 @@ public class RomanToArabian {
 
         static int[] Arab = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
-        public static int RometoArab(String rome){
+        public static int romeToArab(String rome){
 
             StringBuffer romeNumber = new StringBuffer(rome);
             int arabNumber = 0, i = 0;
