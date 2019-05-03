@@ -1,12 +1,7 @@
 public class ControlType {
 
     public static boolean isNumeric(String str) {
-        String result = str.replaceAll("\\D+","");
-        if(result.length() != str.length()) {
-            return false;
-        } else {
-            return true;
-        }
+        return str.replaceAll("\\D+","").length() != str.length();
     }
 
     public static void checkNumbers(String str1, String str2) {
